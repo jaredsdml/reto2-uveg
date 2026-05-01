@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto 3 - Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div id="contenedor">
+        <h1>Registro de la persona Usuaria</h1>
+        
+        <form id="formulario">
+            <label for="nombre" class="etiqueta">Nombre:</label>
+            <input type="text" id="nombre" class="entrada" required>
+
+            <label for="apellido" class="etiqueta">Apellido:</label>
+            <input type="text" id="apellido" class="entrada" required>
+
+            <label for="correo" class="etiqueta">Correo Electrónico:</label>
+            <input type="email" id="correo" class="entrada" required>
+
+            <label for="password" class="etiqueta">Contraseña:</label>
+            <input type="password" id="password" class="entrada" required>
+
+            <label for="descripcion" class="etiqueta">Breve descripción sobre ti:</label>
+            <textarea id="descripcion" class="entrada" rows="4"></textarea>
+
+            <div class="seccion-opciones">
+                <p class="etiqueta">Intereses:</p>
+                <div class="grupo-intereses">
+                    <label><input type="checkbox" name="interes" value="Tecnología"> Tecnología</label>
+                    <label><input type="checkbox" name="interes" value="Arte"> Arte</label>
+                    <label><input type="checkbox" name="interes" value="Deporte"> Deporte</label>
+                </div>
+            </div>
+
+            <button type="submit" id="boton-registro">Registrarse</button>
+        </form>
+    </div>
+
+</body>
+</html>
