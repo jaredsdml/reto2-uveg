@@ -2,54 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi trabajo de sueños</title>
+    <title>Reto 3 - Formulario</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <div id="envoltura-global">
+    <div id="contenedor">
+        <h1>Registro de la persona Usuaria</h1>
         
-        <div class="encabezado-principal">
-            <h1>Mi trabajo de sueños: Analista de Seguridad Ofensiva</h1>
-        </div>
+        <form id="formulario">
+            <label for="nombre" class="etiqueta">Nombre:</label>
+            <input type="text" id="nombre" class="entrada" required>
 
-        <div id="seccion-descripcion">
-            <p>El trabajo que más deseo obtener es el de especialista en <span class="texto-enfasis">Red Team</span>. En este rol, mi labor principal sería simular ataques reales contra la infraestructura de una organización para identificar puntos débiles y ayudar a los equipos de defensa a fortalecer su postura de seguridad de una manera ética y controlada.</p>
-            
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=400" alt="Ciberseguridad y Red Team">
-        </div>
+            <label for="apellido" class="etiqueta">Apellido:</label>
+            <input type="text" id="apellido" class="entrada" required>
 
-        <div class="bloque-informacion">
-            <h3>Razones por las que aspiro a este puesto</h3>
-            <ul>
-                <li>Me motiva el desafío intelectual de encontrar vulnerabilidades en sistemas complejos.</li>
-                <li>Es un campo que requiere una actualización constante, lo cual se alinea con mi gusto por el estudio.</li>
-                <li>Permite contribuir directamente a la protección de datos e información crítica de terceros.</li>
-            </ul>
-        </div>
+            <label for="correo" class="etiqueta">Correo Electrónico:</label>
+            <input type="email" id="correo" class="entrada" required>
 
-        <div id="requisitos-tecnicos">
-            <h3>Pasos y requisitos clave</h3>
-            <table>
-                <tr>
-                    <th>Etapa</th>
-                    <th>Requisito o Certificación</th>
-                </tr>
-                <tr>
-                    <td>Formación base</td>
-                    <td>Ingeniería en Desarrollo de Software</td>
-                </tr>
-                <tr>
-                    <td>Especialización</td>
-                    <td>Certificación OSCP (Offensive Security Certified Professional)</td>
-                </tr>
-                <tr>
-                    <td>Práctica técnica</td>
-                    <td>Dominio de lenguajes como Python y Bash para automatización</td>
-                </tr>
-            </table>
-        </div>
+            <label for="password" class="etiqueta">Contraseña:</label>
+            <input type="password" id="password" class="entrada" required>
 
+            <label for="descripcion" class="etiqueta">Breve descripción sobre ti:</label>
+            <textarea id="descripcion" class="entrada" rows="4"></textarea>
+
+            <div class="seccion-opciones">
+                <p class="etiqueta">Intereses:</p>
+                <div class="grupo-intereses">
+                    <label><input type="checkbox" name="interes" value="Tecnología"> Tecnología</label>
+                    <label><input type="checkbox" name="interes" value="Arte"> Arte</label>
+                    <label><input type="checkbox" name="interes" value="Deporte"> Deporte</label>
+                </div>
+            </div>
+
+            <button type="submit" id="boton-registro">Registrarse</button>
+        </form>
     </div>
 
 </body>
